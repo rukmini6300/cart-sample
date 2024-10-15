@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/rukmini6300/cart-sample/static/css/main.2d0050ee.css",
+    "main.js": "/rukmini6300/cart-sample/static/js/main.d588953f.js",
+    "static/js/453.a57c78a5.chunk.js": "/rukmini6300/cart-sample/static/js/453.a57c78a5.chunk.js",
+    "static/media/img3.jpeg": "/rukmini6300/cart-sample/static/media/img3.3f1299d8b7b06717ef11.jpeg",
+    "static/media/img2.jpeg": "/rukmini6300/cart-sample/static/media/img2.c1f5ff063a87f05d90be.jpeg",
+    "index.html": "/rukmini6300/cart-sample/index.html",
+    "main.2d0050ee.css.map": "/rukmini6300/cart-sample/static/css/main.2d0050ee.css.map",
+    "main.d588953f.js.map": "/rukmini6300/cart-sample/static/js/main.d588953f.js.map",
+    "453.a57c78a5.chunk.js.map": "/rukmini6300/cart-sample/static/js/453.a57c78a5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2d0050ee.css",
+    "static/js/main.d588953f.js"
+  ]
+}
