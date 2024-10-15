@@ -1,38 +1,221 @@
-.App {
-  text-align: center;
+body{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;   
+    position: relative;
+    font-family: "Roboto", sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  padding: 0;
+  margin: 0
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+h1,h2,h3,h4,h5,h6,p,ul {
+  margin-bottom: 0
+}
+.container {
+  margin: 0 auto;
+  position: relative
+}
+@media only screen and (max-width: 992px) {
+ .container {
+      padding:0 12px
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media(min-width: 992px) {
+  .container {
+      width:970px !important
   }
-  to {
-    transform: rotate(360deg);
+}
+@media only screen and (min-width: 1200px) {
+  .container {
+      width:1200px !important
   }
+}
+.silver-tab_head{
+    text-align: center;
+    padding: 20px;
+    margin-top:20px;
+}
+.silver-tab_head >h1{
+    font-size: 28px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    text-transform: capitalize;
+}
+.silver-tab_head >p{
+    text-align: center;
+    margin: 0px auto;
+    max-width: 60%;
+    font-size: 16px;
+    color: #2b2a2a;
+}
+.tab_main_content{
+    font-size: 0px;
+    width: 100%;
+    position: relative;
+}
+.tabs_mobile_view{
+    width: 100%;
+}
+.tabs_left_content{
+  width: 40%;
+  font-size: 14px;
+  display: inline-block !important;
+  vertical-align: top;
+}
+.tabs_right_content{
+    width: 60%;
+    font-size: 14px;
+    display: inline-block !important;
+    vertical-align: top;
+   
+}
+ /* css start here */
+.sliver_tab_main{
+   width:100%;
+   font-size: 0px;
+   position: relative;
+   padding-top: 60px;
+}
+.silver-right-tab-accordian{
+  width: 45%;
+  display: inline-block;
+  font-size: 14px;
+  vertical-align: top;
+}
+.silver-left-tab-image{
+  display: inline-block;
+  width: 55%;
+  font-size: 14px;
+  vertical-align: top;
+}
+.MuiPaper-root{
+  box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.2),0px 0px 0px 0px rgba(0,0,0,0.14),0px 0px 0px 0px rgba(0,0,0,0.12) !important
+}
+.MuiTabs-indicator{ 
+  background-color: transparent !important;
+}
+.sliver-button{
+  background-color: red !important;
+}
+.MuiButtonBase-root {
+  /* border-bottom: 1px solid #ccc !important; */
+    align-items: flex-start !important;
+    max-width: 100% !important; 
+    max-height: 100% !important;
+}
+.arrow_icon{
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  margin-left: 10px;
+  color: #ccc;
+}
+.MuiTabs-flexContainer >button{
+ border-bottom: 1px solid #ccc !important;
+  margin-bottom: 20px;
+}
+.tab_contents-heads{
+ color: #000; 
+ text-align: left;
+ text-transform: capitalize;
+}
+.tabs_summary{
+  text-align: left;
+  text-transform: capitalize;
+  padding-top: 15px;
+}
+.sliver-icon{
+  display: none;
+}
+.Mui-expanded >.sliver-icon{
+  display: block;
+  margin-right: 10px;
+  /* color: pink; */
+}
+.Mui-expanded > .arrow_icon{
+  display: none;
+}
+.Mui-expanded > button{
+  border-bottom: 0px !important;
+}
+.sliver-label{
+  font-size: 16px;
+  text-transform: capitalize;
+}
+.Mui-expanded >.sliver-label{
+  /* color: pink; */
+  font-size: 14px;
+  text-transform: capitalize;
+}
+.MuiTabs-flexContainer >button:has(.Mui-expanded){
+  border-bottom: 0px !important;
+}
+.ProjectView-cls:has(.Mui-expanded){
+  border-left: 4px solid rgb(85 222 186);
+  box-shadow:0 1px 3px 0 rgb(85 222 186), 0 1px 2px -1px rgb(85 222 186);
+}
+.ScrumView-cls:has(.Mui-expanded){
+  border-left: 4px solid red ;
+  box-shadow:0 1px 3px 0 #f60a0a91, 0 1px 2px -1px #f3030391;
+}
+.Timelineview-cls:has(.Mui-expanded){
+  border-left:4px solid #15a4e17d;
+  box-shadow:0 1px 3px 0 #15a4e17d, 0 1px 2px -1px #15a4e17d;
+}
+.AgileView-cls:has(.Mui-expanded){
+  border-left: 4px solid #f33f84;
+  box-shadow:0 1px 3px 0 #f781ae, 0 1px 2px -1px #f781ae;
+}
+.ProjectView-cls .sliver-icon{
+  color: rgb(1, 176, 129);
+}
+.ScrumView-cls .sliver-icon{
+  color:red ;
+}
+.Timelineview-cls .sliver-icon{
+  color: #15a4e17d;
+}
+.AgileView-cls .sliver-icon{
+  color:#f33f84;
+}
+/* .ProjectView-cls:has(.sliver-label){
+  color: green;
+} */
+.MuiBox-root{
+  padding: 0px;
+}
+.tab_main{
+  padding-top: 80px;
+}
+.ProjectView-img {
+  box-shadow:0 1px 3px 0 rgb(85 222 186), 0 1px 2px -1px rgb(85 222 186);
+  padding: 8px;
+  width: fit-content;
+}
+.ScrumView-img{
+  box-shadow:0 1px 3px 0 #f3010191, 0 1px 2px -1px #f3030391;
+  padding: 8px;
+  width: fit-content;
+}
+.Timelineview-img{
+  box-shadow:0 1px 3px 0 #15a4e17d, 0 1px 2px -1px #15a4e17d;
+  padding: 8px;
+  width: fit-content;
+}
+.AgileView-img{
+  box-shadow:0 1px 3px 0 #f781ae, 0 1px 2px -1px #f781ae;
+  padding: 8px;
+  width: fit-content;
+}
+.ProjectView-cls .Mui-expanded >.sliver-label{
+  color: rgb(85 222 186) !important;
+}
+.ScrumView-cls .Mui-expanded >.sliver-label{
+  color: red !important;
+}
+.Timelineview-cls .Mui-expanded >.sliver-label{
+color: #15a4e17d !important;
+}
+.AgileView-cls .Mui-expanded >.sliver-label{
+  color: #f781ae;
 }
